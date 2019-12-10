@@ -13,6 +13,7 @@
   roles:
     - { role: system/base, tags: ['base', 'system'] }
     - { role: system/fedora-workstation, tags: ['fedora', 'system'] }
+    - { role: system/backup-policy, tags: ['backup-policy', 'system'] }
     - { role: system/packaging-tools, tags: ['packaging-tools', 'system'] }
     - { role: system/python, tags: ['python', 'system'] }
     - { role: system/ruby, tags: ['ruby', 'system'] }
