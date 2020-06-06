@@ -1,0 +1,14 @@
+---
+- name: install ddclient
+  package:
+    state: present
+    name: ddclient
+
+- name: push ddclient config
+  notify: restart ddclient.service
+
+- name: start/enable ddclient.service
+  service:
+    name: ddclient.service
+    state: started
+    enabled: yes

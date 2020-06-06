@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  role_name: system/ddns
+  author: Justin W. Flory
+  description: Customized Ansible Role for ddclient (Dynamic DNS)
+  license: BSD-3-Clause
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: EL
+      versions:
+        - 8
+    - name: Fedora
+      versions:
+        - all
+
+  galaxy_tags:
+    - linux
+    - dns
+    - el8
+
+# TBD – need the repos/epel role first.
+# dependencies:
+#   - role: repos/epel
