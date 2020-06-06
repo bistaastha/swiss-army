@@ -1,10 +1,12 @@
 [Unit]
-Description=Automatically connect to a ProtonVPN Secure Core VPN server.
+Description=Connect to a ProtonVPN Secure Core server.
 Wants=network-online.target
 
 [Service]
 Type=forking
 ExecStart=/usr/bin/protonvpn connect --sc
+Restart=always
+RestartSec=60
 Environment=PVPN_WAIT=300
 Environment=PVPN_DEBUG=1
 Environment=SUDO_USER={{ target_user }}
